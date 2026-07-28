@@ -1,0 +1,1012 @@
+/* RESET */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/*RESPONSIVE OF THE MENU --------------------------- */
+
+.mobile-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: black;
+  z-index: 1000;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.mobile-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBIILE LOGO -------------------- */
+
+.mobile-logo-link{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+
+.mobile-logo{
+  height:28px;
+  width:auto;
+  display:block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 1500;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* BODY INFO GENERAL -------------------------- */
+
+body {
+  font-family: monospace;
+  background: #09090B;
+  color: #F6F6F6;
+  margin: 0;
+}
+
+/* LOGO DEL SIDE BAR ---------------------------- */
+
+.logo-slot img {
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+  opacity: 0;                 /* Inicialmente invisible */
+  transform: translateY(-10px); /* Levantado un poco */
+  transition: opacity 0.4s ease, transform 0.4s ease; /* Transición suave */
+    justify-content:center;
+
+}
+
+.logo-visible {
+  opacity: 1;                  /* Se hace visible */
+  transform: translateY(0);    /* Se mueve a la posición final */
+}
+
+.logo-slot {
+  justify-content:center;
+  width:80%;
+}
+
+.logo-slot a {
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+
+
+/* SIDEBAR -------------------------------------- */
+
+.sidebar {
+  width:25%;
+  height:100vh;
+  background:#09090B;
+  position:fixed;
+  right:0;
+  top:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.sidebar-container {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+}
+
+
+/* TODOS LOS LINKS DEL SIDEBAR */
+
+.sidebar a {
+  color:#F6F6F6;
+  text-decoration:none;
+  transition:color .3s ease;
+}
+
+
+/* BOTONES */
+
+.slot {
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:80%;
+  cursor:pointer;
+}
+
+
+.slot:hover {
+  color:#DBAEBB;
+}
+
+
+/* PAGINA ACTUAL */
+
+.tab.active {
+  color:#384B71;
+  font-size: 1.10em;
+}
+
+.tab.active::before {
+  content:"✦";
+  margin-right:8px;
+}
+
+/* ---------- MAIN CONTENT HOME PAGE -------------------- */
+.main {
+  width: 75%;
+  margin-right: 25%;
+  height: 100vh;
+ 
+}
+
+/* HERO -------------- */
+.hero {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#384B71, #09090B);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.hero h2 {
+  font-size:17px;
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+.logo-gif {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+/* TARJETAS ------------------*/
+.projects {
+  background:#09090B;
+  padding: 50px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 50px;
+  width:100%;
+}
+
+.projects img {
+  width: 75%;
+  cursor:pointer;
+  display:block;
+  margin:auto;
+  transition:0.3s;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.projects img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects img:hover {
+  transform: scale(1.03);
+}
+
+
+/* ---------- PROJECT PAGES -------------------------------------------------- */
+
+/* HERO ----------------*/
+
+.project-hero{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:80px 0;
+}
+
+.project-hero img{
+  max-width:1200px;
+  margin:120px auto;
+  width: 70%;
+  cursor:pointer;
+  display: block;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project-hero img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  .project-hero img:hover {
+  transform: scale(1.03);
+}
+
+
+/* HERO TEXT ------------------- */
+
+.hero-text{
+  padding:40px 20px;
+}
+
+.hero-text h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.hero-type{
+  font-size:14px;
+  opacity:0.7;
+  margin-bottom:10px;
+}
+
+.hero-desc{
+  max-width:600px;
+  line-height:1.5;
+}
+
+/* RESPONSIVE -------------- */
+
+@media (max-width:768px){
+
+.hero-text h1{
+  font-size:28px;
+}
+
+.hero-text{
+  padding:25px;
+}
+
+}
+
+/* PROJECT PAGES IMAGES & TEXT --------------- */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 20px;
+}
+.project-content img, 
+.project-content video{
+  width: 65%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.general-carousel {
+  width: 65%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor:pointer;
+}
+
+.general-carousel img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* TEXT TITLES SECCTIONS ---------- */
+
+.content-section{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+}
+
+/* HEADER DE SECCIÓN ----------- */
+
+.section-header{
+  width:85%;
+  max-width:900px;
+}
+
+/* TÍTULO */
+
+.section-title{
+  font-size:25px;
+  margin-bottom:10px;
+  letter-spacing:1px;
+}
+
+/* DESCRIPCIÓN */
+
+.section-desc{
+  max-width:600px;
+  line-height:1.5;
+  font-size:14px;
+}
+
+/* Responsive ----------- */
+
+@media (max-width:768px){
+
+  .section-header{
+    width:85%;
+  }
+
+  .section-title{
+    font-size:20px;
+  }
+
+}
+
+/* -------------- IMAGENES CON ANIMACION HOVER ------- */
+.animate {
+  transition: transform 0.3s ease;
+}
+
+.animate:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGENES QUE PERMITEN ZOOM EN LIGHTBOX */
+
+.zoomable {
+  cursor: zoom-in;
+}
+
+#lightbox-img {
+  transition: transform .3s ease;
+  cursor: zoom-in;
+}
+
+#lightbox-img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+#lightbox {
+  overflow:auto;
+}
+
+/* -------------- IMAGEN FINAL DEL PRPOYECTO ------- */
+
+.project-final{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top:60px;
+}
+
+.project-final img{
+  width:75%;
+  max-width:1200px;
+  cursor:pointer;
+  display:block;
+  margin:0 auto;
+
+  transition: transform 0.3s ease;
+}
+
+.project-final img:hover{
+  transform: scale(1.03);
+}
+
+/* -------------- Cursores------- */
+
+img {
+  cursor: default;
+}
+
+img[onclick] {
+  cursor:pointer;
+}
+
+.zoomable img {
+  cursor:zoom-in;
+}
+
+/* ---------- GARDEN PAGE ------------------------------------------------ */
+
+
+.lab-hero{
+  max-width:700px;
+  margin:120px auto 80px auto;
+}
+
+.lab-hero h1{
+  font-size:42px;
+  margin-bottom:25px;
+}
+
+.lab-grid{
+  column-count:2;
+  column-gap:20px;
+  max-width:1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+/* GARDEN IMAGES ------------------------------------------- */
+.garden-item{
+  position:relative;
+  margin-bottom:20px;
+  break-inside:avoid;
+}
+
+.garden-item img{
+  width:100%;
+  display:block;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+}
+
+.garden-item:hover img{
+  transform:scale(1.03);
+}
+
+.carousel {
+  position:relative;
+  overflow:hidden;
+}
+
+
+.carousel img {
+  width:100%;
+  display:block;
+}
+
+
+.carousel:hover img {
+  transform:scale(1.03);
+}
+
+
+.carousel img {
+  transition:transform .3s ease;
+}
+
+/* ---------- HOVER TEXT ---------- */
+
+.garden-item::after{
+  content: attr(data-desc);
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  right:10px;
+
+  background:rgba(0,0,0,0.6);
+  color:white;
+  font-size:12px;
+  padding:10px;
+
+  opacity:0;
+  transition:0.3s ease;
+  pointer-events:none;
+}
+
+.garden-item:hover::after{
+  opacity:1;
+}
+
+/* ---------- LIGHTBOX ---------- */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.9);
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  overflow:hidden;
+  z-index:999;
+}
+
+.lightbox img{
+  max-width:80%;
+  max-height:70vh;
+  transition:transform .15s ease;
+  user-select:none;
+}
+
+.lightbox p{
+  color:white;
+  margin-top:15px;
+  max-width:600px;
+  text-align:center;
+  font-size:14px;
+}
+
+.lightbox .close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+}
+
+#lightbox-img{
+  transition: transform .15s ease;
+  user-select:none;
+  will-change:transform;
+  cursor:default;
+}
+
+#lightbox-img.can-zoom{
+  cursor:zoom-in;
+}
+
+#lightbox-img.can-zoom.zoomed{
+  cursor:grab;
+}
+
+#lightbox-img.can-zoom.dragging{
+  cursor:grabbing;
+}
+
+#lightbox-img.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.static-img{
+  cursor:default !important;
+  pointer-events:none;
+}
+
+
+/*---------- ABOUT AND CONTACT PAGE ------- */
+
+.about-container{
+  max-width:900px;
+  margin:120px auto 80px auto;
+  padding:0 20px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:40px;
+}
+
+.about-image img{
+  width:100%;
+  max-width:400px;
+  display:block;
+  border-radius:20px;
+}
+
+/* TEXT CONTENT */
+
+.about-text{
+  width:85%;
+  max-width:900px;
+}
+
+.about-text h1{
+  font-size:42px;
+  margin-bottom:20px;
+  letter-spacing:1px;
+}
+
+.about-text p{
+  max-width:600px;
+  line-height:1.6;
+  font-size:15px;
+  margin-bottom:15px;
+}
+
+.about-text a{
+  color:white;
+  text-decoration:none;
+  transition:color 0.3s ease;
+}
+
+.about-text a:hover{
+  color:#DBAEBB;
+}
+
+@media (max-width:768px){
+
+  .about-container{
+    margin:100px auto 60px auto;
+    padding:0 20px;
+  }
+
+  .about-image img{
+    max-width:180px;
+    margin:auto;
+  }
+
+  .about-text{
+    width:100%;
+  }
+
+  .about-text h1{
+    font-size:32px;
+  }
+
+  .about-text p{
+    max-width:100%;
+    font-size:14px;
+  }
+
+} 
+
+
+
+/* ---------- CONTACT LINKS (si los sigues usando en otros lados) ---------- */
+
+.contact-section a{
+  color:white;
+  text-decoration:none;
+  transition:color 0.3s ease;
+}
+
+.contact-section a:hover{
+  color:#DBAEBB;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:900px){
+
+  .lab-grid{
+    column-count:2;
+    padding:0 25px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .about-container{
+    margin:100px auto 60px auto;
+    padding:0 20px;
+  }
+
+  .about-image img{
+    max-width:180px;
+    margin:auto;
+  }
+
+  .about-text{
+    width:100%;
+  }
+
+  .about-text h1{
+    font-size:32px;
+  }
+
+  .about-text p{
+    max-width:100%;
+    font-size:14px;
+  }
+
+}
+
+@media (max-width:500px){
+
+  .lab-grid{
+    column-count:1;
+    padding:0 20px;
+  }
+
+}
+
+
+
+/*SIDE BAR - HAMBURGER MENU ------------ */
+
+ /* MOBILE FIX REAL */
+@media (max-width:768px){
+
+  .mobile-header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  /* 👇 ESCONDER SIDEBAR BASE */
+  .sidebar {
+    display: none;
+  }
+
+  /* 👇 SIDEBAR SOLO CUANDO SE ABRE */
+  .sidebar.open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: #09090B;
+    z-index: 2000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
+  }
+
+}
+
+/*TOP BAR ---------- */
+
+.mobile-topbar{
+  display:none;
+}
+
+@media (max-width:768px){
+
+  .mobile-topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    padding:0 15px;
+    background:#09090B;
+    z-index:3000;
+
+
+
+    opacity:0;
+    transform:translateY(-10px);
+
+    transition:
+      opacity .4s ease,
+      transform .4s ease;
+
+    pointer-events:none;
+  }
+
+  .mobile-topbar.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+    pointer-events:auto;
+
+  }
+
+  .mobile-logo{
+    height:28px;
+    cursor:pointer;
+  }
+
+  .mobile-ig{
+    font-size:12px;
+    color:white;
+    text-decoration:none;
+  }
+
+  #menuToggle{
+    font-size:26px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+  }
+}
+
+/* SITE FOOTER GLOBAL ------------------------- */
+
+.site-footer {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.footer-message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: .6;
+}
+
+/* ---------- GARDEN LIGHTBOX ---------- */
+
+.garden-lightbox{
+
+  display:none;
+
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.9);
+
+  z-index:2000;
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+}
+
+
+.garden-lightbox img{
+
+  max-width:80%;
+  max-height:75vh;
+
+  object-fit:contain;
+
+}
+
+
+.garden-lightbox p{
+
+  color:white;
+
+  margin-top:20px;
+
+  max-width:600px;
+
+  text-align:center;
+
+  font-size:14px;
+
+}
+
+
+.garden-close,
+.garden-prev,
+.garden-next{
+
+  position:absolute;
+
+  background:none;
+  border:none;
+
+  color:white;
+
+  font-size:35px;
+
+  cursor:pointer;
+
+}
+
+
+.garden-close{
+
+  top:20px;
+  right:30px;
+
+}
+
+
+.garden-prev{
+
+  left:40px;
+
+}
+
+
+.garden-next{
+
+  right:40px;
+
+}
+
+
+@media(max-width:768px){
+
+  .garden-prev{
+    left:15px;
+  }
+
+  .garden-next{
+    right:15px;
+  }
+
+}
+
+/* PROJECT CAROUSEL ----------------------------- */
+
+.project-lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.9);
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  z-index:9999;
+}
+
+.project-lightbox img{
+  max-width:80%;
+  max-height:75vh;
+}
+
+.project-lightbox p{
+  color:white;
+  margin-top:20px;
+}
+
+.project-prev,
+.project-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:32px;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+
+.project-prev{
+  left:40px;
+}
+
+.project-next{
+  right:40px;
+}
+
+.project-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:35px;
+  color:white;
+  cursor:pointer;
+}
