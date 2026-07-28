@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofia Contla | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR MOBILE / HAMBURGER MENU -->
+  <div class="mobile-topbar"> 
+    
+    <a href="index.html" class="mobile-logo-link">
+      <img src="logo.gif" class="mobile-logo" alt="Logo">
+    </a>
+
+    <a class="mobile-ig" href="https://www.instagram.com/bycontla" target="_blank">
+      @bycontla
+    </a>
+
+    <button id="menuToggle">☰</button>
+
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+
+<!-- SIDEBAR MENU -->
+  <aside class="sidebar">
+    <div class="sidebar-container">
+
+  <!-- LOGO -->
+    <div class="slot logo-slot">
+      <a href="index.html">
+        <img src="logo.gif" alt="Logo">
+      </a>
+    </div>
+
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+  <!-- TABS DE PROYECTOS -->
+
+      <a class="slot tab" href="wines.html">
+        Wines | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="naui.html">
+        NAUI | Branding
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="titl.html">
+        Tlitl | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="tallo.html">
+        Tallo | UX/UI
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="garden.html">
+        Digital Garden
+      </a>
+    
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+    
+    <!-- FOOTER LINKS -->
+    <a class="slot tab active" href="about.html">
+      About
+    </a>
+
+    <a class="slot tab" href="https://www.instagram.com/bycontla/" target="_blank">
+      Journal: @bycontla
+    </a>
+
+    </div>
+  </aside>
+
+<!-- PARTE DE CONTENIDO -->
+  <main class="main">
+
+<!-- ABOUT AND CONTACT SECTION -->
+
+    <div class="about-container">
+      <div class="about-image">
+        <img src="foto1.jpg" alt="Sofia Contla">
+      </div>
+      <div class="about-text">
+        <h1>About</h1>
+        <p>
+          Hi, I’m Sofia — a graphic designer working across branding, visual identity, and digital experiences.
+        </p>
+        <p>
+          MI create visual systems that connect storytelling, culture, and design to build meaningful experiences across both print and digital spaces. My work focuses on creating identities that feel thoughtful, expressive, and intentional — where every detail has a purpose.
+        </p>
+      </div>
+
+      <div class="about-text">
+        <h1>Get in Touch</h1>
+        <p>sofcontla@gmail.com</p>
+        <p>
+          <a href="https://www.linkedin.com/in/sofiacontla" target="_blank">
+            LinkedIn
+          </a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/bycontla/" target="_blank">
+            Instagram
+          </a>
+        </p>
+      </div>
+
+    </div>
+    
+<!-- FOOTER --------------- -->
+
+    <footer class="site-footer">
+
+      <p class="footer-message">
+        Made with curiosity and a little bit of magic ✦
+      </p>
+
+      <p class="footer-copy">
+        Sofia Contla © 2026
+      </p>
+
+      
+
+</main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

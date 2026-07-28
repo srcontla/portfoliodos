@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofia Contla | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR MOBILE / HAMBURGER MENU -->
+  <div class="mobile-topbar"> 
+    
+    <a href="index.html" class="mobile-logo-link">
+      <img src="logo.gif" class="mobile-logo" alt="Logo">
+    </a>
+
+    <a class="mobile-ig" href="https://www.instagram.com/bycontla" target="_blank">
+      @bycontla
+    </a>
+
+    <button id="menuToggle">☰</button>
+
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+<!-- SIDEBAR MENU -->
+  <aside class="sidebar">
+    <div class="sidebar-container">
+
+  <!-- LOGO -->
+    <div class="slot logo-slot">
+      <a href="index.html">
+        <img src="logo.gif" alt="Logo">
+      </a>
+    </div>
+
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+  <!-- TABS DE PROYECTOS -->
+    <!-- MENU BOTONES / SELECCIÓN -->
+      <a class="slot tab" href="wines.html">
+        Wines | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab active" href="naui.html">
+        NAUI | Branding
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="titl.html">
+        Tlitl | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="tallo.html">
+        Tallo | UX/UI
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="garden.html">
+        Digital Garden
+      </a>
+    
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+
+    <!-- FOOTER LINKS -->
+    <a class="slot tab" href="about.html">
+      About
+    </a>
+
+    <a class="slot tab" href="https://www.instagram.com/bycontla/" target="_blank">
+      Journal: @bycontla
+    </a>
+
+    </div>
+  </aside>
+
+<!-- PARTE DE CONTENIDO -->
+  <main class="main">
+<!-- HERO SECTION -->
+    <div class="project-hero">
+      <img src="naui-cover.jpg" 
+     alt="Roxana & Ivanna Wine Packaging" class="hero-img" onclick="openLightbox(this)">
+      <div class="hero-text">
+        <h1>NAUI — Beauty Brand</h1>
+        <p class="hero-type">Brand Identity ✦ Packaging Design ✦ Visual System</p>
+        <p class="hero-desc">
+          A branding project focused on the development of a clean, skincare-inspired beauty brand.</p>
+        <p class="hero-desc">
+          The system explores a range of tinted lip treatments through color, packaging, and minimal graphic elements, creating a cohesive and adaptable visual identity across product and brand applications.
+        </p>
+      </div>
+    </div>
+
+<!-- PROJECT CONTENT -->
+    <div class="project-content">
+
+  <!-- LOGO -->
+      <div class="content-section">
+        <div class="animate">
+          <img src="naui-logo-animation.gif"
+              onclick="openLightbox(this)">
+        </div>
+      </div>
+
+  <!-- PRODUCT -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Product</h2>
+        </div>
+
+        <div class="general-carousel"
+          onclick="openProjectCarousel(this)"
+          data-images='[
+          "naui-lipgloss-01.jpg",
+          "naui-lipgloss-02.jpg",
+          "naui-lipgloss-03.jpg",
+          "naui-lipgloss-04.jpg"
+          ]'
+         data-desc='[ 
+           " ",
+           " ",
+           " "
+         ]'>
+          <img src="naui-lipgloss-01.jpg">
+        </div>
+      </div>
+
+  <!-- PACKAGING -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Packaging</h2>
+        </div>
+
+        <div class="animate">
+          <img  class="zoomable" src="naui-dieline.jpg"
+              onclick="openLightbox(this)">
+        </div>
+
+        <div class="general-carousel"
+          onclick="openProjectCarousel(this)"
+          data-images='[
+          "naui-box-01.jpg",
+          "naui-box-02.jpg",
+          "naui-box-03.jpg",
+          "naui-box-04.jpg"
+          ]'
+         data-desc='[ 
+           " ",
+           " ",
+           " "
+         ]'>
+          <img src="naui-lipgloss-01.jpg">
+        </div>
+
+      </div>
+
+  <!-- APPLICATIONS -->
+
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Applications</h2>
+        </div>
+        <div class="animate">
+          <img src="naui-totebag.jpg" 
+              onclick="openLightbox(this)">
+        </div>
+        <div class="animate">
+          <img src="naui-window.jpg" 
+              onclick="openLightbox(this)">
+        </div>
+      </div>
+
+  <!-- RESULT -->
+      <div class="project-final">
+        <img class="zoomable"  src="naui-combo.jpg" 
+          onclick="openLightbox(this)">
+      </div>
+    </div>
+
+<!-- FOOTER --------------- -->
+
+    <footer class="site-footer">
+
+      <p class="footer-message">
+        Made with curiosity and a little bit of magic ✦
+      </p>
+
+      <p class="footer-copy">
+        Sofia Contla © 2026
+      </p>
+
+
+</main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+<!-- PROJECT LIGHTBOX -->
+
+  <div class="project-lightbox" id="project-lightbox">
+    <span class="project-close">×</span>
+    <button class="project-prev">←</button>
+    <img id="project-lightbox-img">
+    <button class="project-next">→</button>
+    <p id="project-lightbox-caption"></p>
+  </div>
+
+<script src="script.js"></script>
+<script src="carousel.js"></script>
+
+</body>
+</html>

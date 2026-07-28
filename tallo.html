@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofia Contla | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR MOBILE / HAMBURGER MENU -->
+  <div class="mobile-topbar"> 
+    
+    <a href="index.html" class="mobile-logo-link">
+      <img src="logo.gif" class="mobile-logo" alt="Logo">
+    </a>
+
+    <a class="mobile-ig" href="https://www.instagram.com/bycontla" target="_blank">
+      @bycontla
+    </a>
+
+    <button id="menuToggle">☰</button>
+
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+<!-- SIDEBAR MENU -->
+  <aside class="sidebar">
+    <div class="sidebar-container">
+
+  <!-- LOGO -->
+    <div class="slot logo-slot">
+      <a href="index.html">
+        <img src="logo.gif" alt="Logo">
+      </a>
+    </div>
+
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+  <!-- TABS DE PROYECTOS -->
+    <!-- MENU BOTONES / SELECCIÓN -->
+      <a class="slot tab" href="wines.html">
+        Wines | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="naui.html">
+        NAUI | Branding
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="titl.html">
+        Tlitl | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab active" href="tallo.html">
+        Tallo | UX/UI
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="garden.html">
+        Digital Garden
+      </a>
+    
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+    <!-- FOOTER LINKS -->
+    <a class="slot tab" href="about.html">
+      About
+    </a>
+
+    <a class="slot tab" href="https://www.instagram.com/bycontla/" target="_blank">
+      Journal: @bycontla
+    </a>
+
+    </div>
+  </aside>
+
+<!-- PARTE DE CONTENIDO -->
+  <main class="main">
+
+<!-- TALLO SECTION -->
+
+  <!-- HERO SECTION -->
+    <div class="project-hero">
+      <img src="tallo-intro.jpg" 
+     alt="Roxana & Ivanna Wine Packaging" class="hero-img" onclick="openLightbox(this)">
+      <div class="hero-text">
+        <h1>TALLO</h1>
+        <p class="hero-type">UX/UI Design ✦ Product Concept</p>
+        <p class="hero-desc">
+          A collaborative language learning app concept focused on making conversational practice feel safer, more approachable, and connected to real-life situations.
+        </p>
+      </div>
+    </div>
+
+  <!-- PROJECT CONTENT -->
+    <div class="project-content">
+
+    <!-- ABOUT THE PROJECT AND MY ROLL -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Overview</h2>
+        </div>
+        <div class="no-anim">
+          <img src="tallo-roadmap.png" onclick="openLightbox(this)">
+        </div>
+        <div class="section-header">
+          <p class="section-desc">
+            A collaborative project involving eight team members, developed over the course of three months.
+          </p>
+          <p class="section-desc">
+            My role focused on UI design, conducting user interviews, and supporting research throughout different stages of the project.
+          </p>
+        </div>
+      </div>
+
+    <!-- PROBLEMS AND SOLUTIONS -->
+
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Background & Research</h2>
+          <p class="section-desc">
+            Through an initial round of interviews with 20 individuals, we uncovered a gap between what users seeking to practice languages want—specifically the sense of security they seek—and the applications currently available on the market.
+          </p>
+        </div>
+        <div class="no-anim">
+          <img src="tallo-copetitors.png" onclick="openLightbox(this)">
+        </div>
+        <div class="section-header">
+          <p class="section-desc">
+            We identified three main areas in which current applications fall short
+          </p>
+          <p>
+            1- The Tinder Effect: Suspicious behavior from other users that prompts users to abandon the platform.
+          </p>
+          <p>
+            2- The Spotlight Effect: Feeling overwhelmed by face-to-face interactions with multiple people.
+          </p>
+          <p>
+            3- The Utility Gap: Despite practicing for extended periods, users do not feel capable of holding short conversations in real life.
+          </p>
+        </div>
+          <!-- SUBSECTION SOLUTION-->
+        <div class="section-header">
+          <h2 class="section-title">SOLUTION</h2>
+            <!-- AVATARS-->
+          <p class="section-desc">
+            To add an extra layer of privacy and reduce appearance anxiety, customizable avatars allow users to interact without showing their real face.
+          </p>
+        </div>
+        <div class="no-anim">
+          <img src="tallo-avatars.gif" class="static-img">
+        </div>
+          <!-- AI PRACTICE-->
+        <div class="section-header">
+          <p class="section-desc">
+            AI-powered scenarios simulate everyday conversations, helping users gradually transition from guided practice to real-world interaction.
+          </p>
+        </div>
+        <div class="no-anim">
+          <video controls playsinline>
+            <source src="tallo-scenario.mp4" type="video/mp4">
+          </video>
+        </div>
+          <!-- CHAT ROOMS-->
+        <div class="section-header">
+          <p class="section-desc">
+            Podcast-like discussion rooms centered around shared interests create a safer and more controlled environment for conversational practice.
+          </p>
+        </div>
+        <div class="no-anim">
+           <video controls playsinline>
+              <source src="tallo-room.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+
+    <!-- TALLO BRANDING -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Brand Identity</h2>
+        </div>
+        <div class="no-anim">
+          <img src="tallo-logo.gif" onclick="openLightbox(this)">
+        </div>
+        <div class="animate">
+          <img src="tallo-app-icon.jpg" onclick="openLightbox(this)">
+        </div>
+      </div>
+
+
+    <!-- CONCLUSION -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">KEY TAKEAWAYS</h2>
+          <p class="section-desc">
+          This project strengthened my understanding of collaborative workflows, research-driven design, and the importance of creating emotionally safe digital experiences.
+          </p>
+        </div>
+        <div class="project-final">
+        <img src="tallo-final.jpg" onclick="openLightbox(this)">
+      </div>
+      </div>
+
+    </div>
+    
+<!-- FOOTER --------------- -->
+
+    <footer class="site-footer">
+
+      <p class="footer-message">
+        Made with curiosity and a little bit of magic ✦
+      </p>
+
+      <p class="footer-copy">
+        Sofia Contla © 2026
+      </p>
+
+
+</main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

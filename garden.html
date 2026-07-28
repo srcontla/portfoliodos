@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofia Contla | DG</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR MOBILE / HAMBURGER MENU -->
+  <div class="mobile-topbar"> 
+    
+    <a href="index.html" class="mobile-logo-link">
+      <img src="logo.gif" class="mobile-logo" alt="Logo">
+    </a>
+
+    <a class="mobile-ig" href="https://www.instagram.com/bycontla" target="_blank">
+      @bycontla
+    </a>
+
+    <button id="menuToggle">☰</button>
+
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+<!-- SIDEBAR MENU -->
+  <aside class="sidebar">
+    <div class="sidebar-container">
+
+  <!-- LOGO -->
+    <div class="slot logo-slot">
+      <a href="index.html">
+        <img src="logo.gif" alt="Logo">
+      </a>
+    </div>
+
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+    <!-- MENU BOTONES / SELECCIÓN -->
+      <a class="slot tab" href="wines.html">
+        Wines | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="naui.html">
+        NAUI | Branding
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="titl.html">
+        Tlitl | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="tallo.html">
+        Tallo | UX/UI
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab active" href="garden.html">
+        Digital Garden
+      </a>
+      
+      <div class="slot tab"></div>
+      <div class="slot tab"></div>
+
+    <!-- FOOTER LINKS -->
+    <a class="slot tab" href="about.html">
+      About
+    </a>
+
+    <a class="slot tab" href="https://www.instagram.com/bycontla/" target="_blank">
+      Journal: @bycontla
+    </a>
+
+    </div>
+  </aside>
+
+<!-- PARTE DE CONTENIDO -->
+  <main class="main">
+    <div class="lab-hero">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Digital Garden</h1>
+          <p>
+            A space for visual experiments, studies, and creative explorations across branding, illustration, and digital design.
+          </p>
+          <p>
+            If you'd like to see more of my work, you can follow me on Instagram → <a href="https://www.instagram.com/bycontla/" target="_blank">@bycontla</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lab-grid">
+
+      <div class="garden-item" data-desc="Motion Study I, Photographic Study">
+       <img src="gar-02.jpg" onclick="openGardenLightbox(this)" data-desc="A street moment where motion blur and artificial light transform everyday movement into abstract neon-like trails.">
+      </div>
+
+      <div class="garden-item carousel" id="packaging-study"
+        onclick="openGardenCarousel(this)"
+           data-images='[
+             "album-cover.jpg",
+             "album-01.jpg",
+             "album-03.jpg",
+             "album-04.jpg",
+             "album-06.jpg",
+             "album-05.jpg",
+             "album-02.jpg"
+           ]'
+           data-desc='[
+             "Light Study I — Final composition.",
+             "Detail exploration.",
+             "Process and experimentation."
+           ]'>
+        <img src="album-cover.jpg"> <!-- ESTA ES LA IMAGEN PRINCIPAL -->
+      </div>
+
+      <div class="garden-item" data-desc="Motion Study II, Photographic Study">
+        <img src="gar-03.jpg" onclick="openGardenLightbox(this)" data-desc="A composition exploring contrast between stillness and movement within public space, isolating a human subject amid urban flow.">
+      </div>
+
+      <div class="garden-item carousel" id="packaging-study"
+        onclick="openGardenCarousel(this)"
+           data-images='[
+             "buttons-cover.jpg",
+             "buttons-04.jpg",
+             "buttons-03.jpg",
+             "buttons-02.jpg",
+             "buttons-01.jpg"
+           ]'
+           data-desc='[
+             "Light Study I — Final composition.",
+             "Detail exploration.",
+             "Process and experimentation."
+           ]'>
+        <img src="buttons-cover.jpg"> <!-- ESTA ES LA IMAGEN PRINCIPAL -->
+      </div>
+      
+      <div class="garden-item" data-desc="Poster Study I, Editorial Experiment">
+        <img src="gar-05.jpg" onclick="openGardenLightbox(this)" data-desc="A contemporary reinterpretation of 1950s film poster aesthetics applied to a modern narrative.">
+      </div>
+
+      <div class="garden-item" id="light-study" data-desc="Light Study I, Photographic Study ">
+        <img src="gar-01.jpg" onclick="openGardenLightbox(this)" 
+          data-desc="A photographic study of light interacting with still architecture, where natural rays create an almost narrative illusion of motion and breath.">
+      </div>
+
+      <div class="garden-item carousel" id="packaging-study"
+        onclick="openGardenCarousel(this)"
+           data-images='[
+             "books-cover.jpg",
+             "books-01.jpg",
+             "books-02.jpg",
+             "books-03.jpg",
+             "books-stamps.jpg"
+           ]'
+           data-desc='[
+             "Light Study I — Final composition.",
+             "Detail exploration.",
+             "Process and experimentation."
+           ]'>
+        <img src="books-cover.jpg"> <!-- ESTA ES LA IMAGEN PRINCIPAL -->
+      </div>
+      
+    </div>
+    
+<!-- FOOTER --------------- -->
+
+    <footer class="site-footer">
+
+      <p class="footer-message">
+        Made with curiosity and a little bit of magic ✦
+      </p>
+
+      <p class="footer-copy">
+        Sofia Contla © 2026
+      </p>
+
+</main>
+
+  <!-- GARDEN LIGHTBOX -->
+
+<div class="garden-lightbox" id="garden-lightbox">
+  <span class="garden-close">×</span>
+
+  <button class="garden-prev">←</button>
+
+  <img id="garden-lightbox-img">
+
+  <button class="garden-next">→</button>
+
+  <p id="garden-lightbox-caption"></p>
+
+</div>
+
+<script src="script.js"></script>
+<script src="gscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sofia Contla | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR MOBILE / HAMBURGER MENU -->
+  <div class="mobile-topbar"> 
+    
+    <a href="index.html" class="mobile-logo-link">
+      <img src="logo.gif" class="mobile-logo" alt="Logo">
+    </a>
+
+    <a class="mobile-ig" href="https://www.instagram.com/bycontla" target="_blank">
+      @bycontla
+    </a>
+
+    <button id="menuToggle">☰</button>
+
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+
+<!-- SIDEBAR MENU -->
+  <aside class="sidebar">
+    <div class="sidebar-container">
+
+  <!-- LOGO -->
+    <div class="slot logo-slot">
+      <a href="index.html">
+        <img src="logo.gif" alt="Logo">
+      </a>
+    </div>
+
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+
+  <!-- TABS DE PROYECTOS -->
+
+      <a class="slot tab active" href="wines.html">
+        Wines | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="naui.html">
+        NAUI | Branding
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="titl.html">
+        Tlitl | Packaging
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="tallo.html">
+        Tallo | UX/UI
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="slot tab" href="garden.html">
+        Digital Garden
+      </a>
+    
+    <div class="slot tab"></div>
+    <div class="slot tab"></div>
+    
+    <!-- FOOTER LINKS -->
+    <a class="slot tab" href="about.html">
+      About
+    </a>
+
+    <a class="slot tab" href="https://www.instagram.com/bycontla/" target="_blank">
+      Journal: @bycontla
+    </a>
+
+    </div>
+  </aside>
+
+<!-- PARTE DE CONTENIDO -->
+  <main class="main">
+
+  <!-- HERO SECTION -->
+    <div class="project-hero">
+       <img src="wine-cover.jpg" 
+       alt="Roxana & Ivanna Wine Packaging" class="hero-img"
+        onclick="openLightbox(this)">
+      <div class="hero-text">
+        <h1>Roxana & Ivanna</h1>
+        <p class="hero-type">Packaging Design ✦ Illustration</p>
+        <p class="hero-desc">
+            A contemporary wine label series exploring contrast through two distinct identities — a soft rosé and a bold red. The packaging and illustration system bring a sense of casual luxury into everyday social moments.
+        </p>
+      </div>
+    </div>
+
+  <!-- PROJECT CONTENT -->
+    <div class="project-content">
+
+    <!-- IVANNA -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Ivanna</h2>
+          <p class="section-desc">
+            A softer rosé identity inspired by cozy rituals, slow evenings, and feminine comfort.
+          </p>
+        </div>
+        <div class="animate">
+          <img class="zoomable" src="wine-extended-iva.jpg" onclick="
+              openLightbox(this)">
+        </div>
+
+        <div class="animate">
+          <img src="wine-individual-iva.gif"
+               onclick="openLightbox(this)">
+        </div>
+      </div>
+
+    <!-- ROXANNA -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Roxanna</h2>
+          <p class="section-desc">
+            A bold red identity influenced by nightlife, confidence, and playful chaos.
+          </p>
+        </div>
+        <div class="animate">
+          <img class="zoomable" src="wine-extended-rox.jpg"
+              onclick="openLightbox(this)">
+        </div>
+        <div class="animate">
+          <img src="wine-individual-rox.gif"
+               onclick="openLightbox(this)">
+        </div>
+      </div>
+
+    <!-- CARRIERS -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Packaging System</h2>
+          <p class="section-desc">
+            Designed to carry the collection together, turning casual moments into shared rituals.
+          </p>
+        </div>
+        <div class="animate">
+          <img src="wine-carrier.jpg" 
+              onclick="openLightbox(this)">
+        </div>
+        <div class="section-header">
+          <p class="section-desc">
+            A minimal single-bottle carrier made for relaxed nights and everyday celebrations.
+          </p>
+        </div>
+        <div class="animate">
+          <img src="wine-carrier-single.jpg" onclick="openLightbox(this)">
+        </div>
+      </div>
+    </div>
+    
+<!-- FOOTER --------------- -->
+
+    <footer class="site-footer">
+
+      <p class="footer-message">
+        Made with curiosity and a little bit of magic ✦
+      </p>
+
+      <p class="footer-copy">
+        Sofia Contla © 2026
+      </p>
+
+
+</main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <p id="lightbox-caption"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
